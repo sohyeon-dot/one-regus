@@ -85,6 +85,7 @@ header{
   display: block;
   position: relative;
   width: max-content;
+  padding-bottom: 9px;
   transition: 0.5s;
 }
 .header-inner ul li a:before{
@@ -185,7 +186,7 @@ main div p:last-child{
 /* Section___________ */
 section{
   width: 1300px;
-  margin: 100px auto;
+  margin: 300px auto 0;
 }
 section h2{
   width: max-content;
@@ -199,6 +200,7 @@ section p{
   line-height: 1.5;
 }
 /* About__ */
+#s1{margin-top: 0;}
 #s1 h2{margin-bottom: 50px;}
 #s1 .texts strong{
   font-style: normal;
@@ -308,51 +310,11 @@ section p{
   color: #d73d00;
   font-style: normal;
 }
-#s1 h4{
-  font-size: 26px;
-  text-align: center;
-  margin: 100px 0;
-}
-#s1 .logo-list{
-  position: relative;
-  width: 1200px;
-  height: 150px;
-  margin: 100px auto;
-  white-space: nowrap;
-  overflow: hidden;
-}
-#s1 .logo-list .logo-inner{
-  position: absolute;
-  width: inherit;
-  top: 0;
-  height: 100%;
-  animation: logo-list-ani 20s linear infinite;
-} 
-#s1 .logo-list .logo-inner:hover{animation-play-state: paused;}
-#s1 .logo-list:before,
-#s1 .logo-list:after{
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(to right, #fff 0%, rgba(225,225,225,0) 100%);
-  z-index: 1;
-}
-#s1 .logo-list:before{left: 0;}
-#s1 .logo-list:after{
-  right: 0;
-  transform: rotate(180deg);
-}
-#s1 img{
-  width: 140px;
-  margin: 10px 20px
-}
 
 /* Proceddure___ */
 #s2 .items{
   display: flex;
   gap: 40px;
-  margin-bottom: 500px;
 }
 #s2 .item{
   height: 500px;
@@ -500,7 +462,7 @@ section p{
 }
 
 /* FAQ____ */
-#s4{height: 1100px;}
+#s4{height: 900px;}
 #s4 .caption{
   position: relative;
   margin: 0 auto -200px;
@@ -742,11 +704,48 @@ section p{
 #s5 .content .form :is(input,select,textarea):focus::placeholder{opacity: 0;}
 #s5 .form input[type=checkbox]:checked+em{background-position: right;}
 
-/* Footer___________ */
-footer{
-  background-color: #222;
-  margin-top: 300px;
+#s5 .banner{margin-top: 150px;}
+#s5 h4{
+  font-size: 26px;
+  text-align: center;
 }
+#s5 .logo-list{
+  position: relative;
+  width: 1200px;
+  height: 150px;
+  margin-top: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#s5 .logo-list .logo-inner{
+  position: absolute;
+  width: inherit;
+  top: 0;
+  height: 100%;
+  animation: logo-list-ani 20s linear infinite;
+} 
+#s5 .logo-list .logo-inner:hover{animation-play-state: paused;}
+#s5 .logo-list:before,
+#s5 .logo-list:after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to right, #fff 0%, rgba(225,225,225,0) 100%);
+  z-index: 1;
+}
+#s5 .logo-list:before{left: 0;}
+#s5 .logo-list:after{
+  right: 0;
+  transform: rotate(180deg);
+}
+#s5 .logo-inner img{
+  width: 140px;
+  margin: 10px 20px
+}
+
+/* Footer___________ */
+footer{background-color: #222;}
 footer .footer-inner{
   width: 1300px;
   margin: auto;
